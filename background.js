@@ -9,7 +9,7 @@ var loggedInImage = document.getElementById('logged_in');
 var canvasContext = canvas.getContext('2d');
 var pollIntervalMin = 5;  // 5 minutes
 var pollIntervalMax = 60;  // 1 hour
-var requestTimeout = 1000 * 2;  // 2 seconds
+var requestTimeout = 1000 * 15;  // 15 seconds
 var rotation = 0;
 var loadingAnimation = new LoadingAnimation();
 
