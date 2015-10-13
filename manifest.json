@@ -1,4 +1,5 @@
 {
+   "manifest_version": 2,
    "background": {
       "page": "background.html",
       "persistent": false
@@ -7,14 +8,11 @@
       "default_icon": "gmail_not_logged_in.png"
    },
    "default_locale": "en",
-   "description": "__MSG_gmailcheck_description__",
+   "description": "__MSG_envatocheck_description__",
    "icons": {
       "128": "icon_128.png"
    },
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC0QukLKXLBBu3zpWtPQLpu44U+qrDWsoX3Oor7i1ZWwConnJdo2tE2t+uiE/iDU4yKeK959MWfXk7UjEOe4h205rvSh627LR/EBdO6OU8+l+WKXhideXe+wslwOOUkPZUL3DCMSrMb2a1d1U1uQgl7nYPNWTQqqndjdeYLmCrb0QIDAQAB",
-   "manifest_version": 2,
-   "name": "__MSG_gmailcheck_name__",
+   "name": "__MSG_envatocheck_name__",
    "permissions": [ "alarms", "tabs", "webNavigation", "*://*.google.com/" ],
-   "update_url": "http://clients2.google.com/service/update2/crx",
-   "version": "4.4.0"
+   "version": "1.0"
 }

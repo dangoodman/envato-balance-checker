@@ -181,7 +181,7 @@ function getInboxCount(onSuccess, onError) {
           handleSuccess(fullCountNode.textContent);
           return;
         } else {
-          console.error(chrome.i18n.getMessage("gmailcheck_node_error"));
+          console.error(chrome.i18n.getMessage("envatocheck_node_error"));
         }
       }
 
@@ -195,7 +195,7 @@ function getInboxCount(onSuccess, onError) {
     xhr.open("GET", getFeedUrl(), true);
     xhr.send(null);
   } catch(e) {
-    console.error(chrome.i18n.getMessage("gmailcheck_exception", e));
+    console.error(chrome.i18n.getMessage("envatocheck_exception", e));
     handleError();
   }
 }

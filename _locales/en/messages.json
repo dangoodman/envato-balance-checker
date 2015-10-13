@@ -1,8 +1,8 @@
 {
-   "gmailcheck_description": {
-      "message": "Displays the number of unread messages in your Google Mail inbox. You can also click the button to open your inbox."
+   "envatocheck_description": {
+      "message": "Displays your Envato balance. You can also click the button to open Codecanyon."
    },
-   "gmailcheck_exception": {
+   "envatocheck_exception": {
       "message": "exception: $1",
       "placeholders": {
          "1": {
@@ -10,10 +10,10 @@
          }
       }
    },
-   "gmailcheck_name": {
-      "message": "Google Mail Checker"
+   "envatocheck_name": {
+      "message": "Envato Balance Checker"
    },
-   "gmailcheck_node_error": {
-      "message": "Error: feed retrieved, but no &lt;fullcount&gt; node found"
+   "envatocheck_node_error": {
+      "message": "Error: page retrieved, but no balance tag found"
    }
 }
