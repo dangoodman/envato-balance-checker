@@ -62,7 +62,7 @@ LoadingAnimation.prototype.paintFrame = function() {
   this.current_++;
   if (this.current_ == this.maxCount_)
     this.current_ = 0;
-}
+};
 
 LoadingAnimation.prototype.start = function() {
   if (this.timerId_)
@@ -72,7 +72,7 @@ LoadingAnimation.prototype.start = function() {
   this.timerId_ = window.setInterval(function() {
     self.paintFrame();
   }, 100);
-}
+};
 
 LoadingAnimation.prototype.stop = function() {
   if (!this.timerId_)
@@ -80,15 +80,15 @@ LoadingAnimation.prototype.stop = function() {
 
   window.clearInterval(this.timerId_);
   this.timerId_ = 0;
-}
+};
 
 function updateIcon() {
   if (!localStorage.hasOwnProperty('unreadCount')) {
-    chrome.browserAction.setIcon({path:"gmail_not_logged_in.png"});
+    chrome.browserAction.setIcon({path:"not_logged_in.png"});
     chrome.browserAction.setBadgeBackgroundColor({color:[190, 190, 190, 230]});
     chrome.browserAction.setBadgeText({text:"?"});
   } else {
-    chrome.browserAction.setIcon({path: "gmail_logged_in.png"});
+    chrome.browserAction.setIcon({path: "logged_in.png"});
     chrome.browserAction.setBadgeBackgroundColor({color:[208, 0, 24, 255]});
     chrome.browserAction.setBadgeText({
       text: localStorage.unreadCount != "0" ? localStorage.unreadCount : ""
@@ -188,7 +188,7 @@ function getInboxCount(onSuccess, onError) {
       handleError();
     };
 
-    xhr.onerror = function(error) {
+    xhr.onerror = function() {
       handleError();
     };
 
